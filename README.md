@@ -1,20 +1,69 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Interactive Image Postcard Gallery
 
-# Run and deploy your AI Studio app
+An interactive, filterable, and searchable image gallery built with React and Vite. Browse, filter, and view a collection of data visualizations and infographics. Includes modal image viewing and a slideshow feature.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1aCtRgEo71_lwm-dDu_7SM6q2fcY_CR05
+- Browse a large collection of images and infographics
+- Filter by category/tags
+- Search by keyword
+- View images in a modal with details
+- Slideshow mode
+- Responsive and modern UI
 
-## Run Locally
+## Screenshots
 
-**Prerequisites:**  Node.js
+<!-- Optionally add screenshots here -->
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+
+### Installation & Local Development
+
+1. **Install dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+2. **Start the development server:**
+
+   ```sh
+   npm run dev
+   ```
+
+   The app will be available at the URL shown in your terminal (typically <http://localhost:5173>).
+
+### Build for Production
+
+1. **Build the app:**
+
+   ```sh
+   npm run build
+   ```
+
+2. **Preview the production build:**
+
+   ```sh
+   npm run preview
+   ```
+
+## Project Structure
+
+- `App.tsx` - Main application component
+- `components/` - UI components (Header, Postcard, Modal, Slideshow, etc.)
+- `data/images.json` - Image metadata and categories
+- `data/images/` - Full-size images
+- `data/thumbnails/` - Thumbnails for gallery view
+- `public/` - Static assets (if any)
+
+## Customization
+
+- To add or update images, edit `data/images.json` and place new images in the appropriate folder.
+
+## License
+
+MIT (or specify your license here)
