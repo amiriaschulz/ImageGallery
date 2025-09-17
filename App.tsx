@@ -13,7 +13,6 @@ const PlaceholderLogo: React.FC = () => (
   >
     <img
       src="data/sas_viya_white.png"
-      alt="SAS Viya Logo"
       className="w-48 h-auto"
       style={{ filter: "drop-shadow(0 0 8px #0008)" }}
       draggable={false}
@@ -168,21 +167,11 @@ const App: React.FC = () => {
           <div className="absolute bottom-4 right-4 z-0 max-w-sm text-right text-xs text-gray-500 pointer-events-none">
             <p>
               Disclaimer: Reports are for internal development/testing only.
-              Please check whether data is{" "}
-              <a href="https://sasoffice365.sharepoint.com/:x:/r/sites/EDU/TrainingDev/data/Shared%20Documents/Excel%20Workbook/Third%20Party%20Data.xlsm?d=wffb06f7c23734e4b9eccf0b899bdd1fb&csf=1&web=1&e=FwEL4B">
-                already approved
-              </a>{" "}
-              or{" "}
-              <a href="https://sas.service-now.com/sp?id=sc_cat_item&sys_id=1ade5ecf1b2eec5478e4c882604bcb58">
-                request Third Party Data
-              </a>{" "}
-              to be used for customer/product demonstrations
+              Please check whether data is already approved or request Third
+              Party Data to be used for customer/product demonstrations
             </p>
             <p>
-              <b>
-                <a href="mailto:falko.schulz@sas.com">Falko Schulz</a>,
-                Australia, 2025 SAS Institute Inc.
-              </b>
+              <b>Falko Schulz, Australia, 2025 SAS Institute Inc.</b>
             </p>
           </div>
 
