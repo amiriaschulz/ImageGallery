@@ -13,7 +13,8 @@ An interactive, filterable, and searchable image gallery built with React and Vi
 
 ## Screenshots
 
-<!-- Optionally add screenshots here -->
+![Image Gallery](data/screen_sample_1.jpg)
+![Full Screen Viewer](data/screen_sample_2.png)
 
 ## Getting Started
 

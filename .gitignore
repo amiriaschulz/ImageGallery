@@ -11,8 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
-data/*
-!data/images.example.json
+data/images
+data/thumbnails
+data/images.json
+data/sas_viya_white.png
 
 # Editor directories and files
 .vscode/*
