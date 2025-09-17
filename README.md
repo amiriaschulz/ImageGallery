@@ -55,7 +55,7 @@ An interactive, filterable, and searchable image gallery built with React and Vi
 
 - `App.tsx` - Main application component
 - `components/` - UI components (Header, Postcard, Modal, Slideshow, etc.)
-- `data/images.json` - Image metadata and categories
+- `data/images.json` - Image metadata and categories (use `images.example.json` as example)
 - `data/images/` - Full-size images
 - `data/thumbnails/` - Thumbnails for gallery view
 - `public/` - Static assets (if any)
@@ -66,4 +66,4 @@ An interactive, filterable, and searchable image gallery built with React and Vi
 
 ## License
 
-MIT (or specify your license here)
+MIT
