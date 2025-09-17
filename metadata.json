@@ -1,0 +1,5 @@
+{
+  "name": "Interactive SAS Viya Gallery",
+  "description": "An interactive web application that displays a collection of images as draggable and selectable postcards. Features include a fullscreen detail view, a search filter, and an automated slideshow mode.",
+  "requestFramePermissions": []
+}
