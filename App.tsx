@@ -12,7 +12,7 @@ const PlaceholderLogo: React.FC = () => (
     style={{ width: "200px" }}
   >
     <img
-      src="data/sas_viya_white.png"
+      src="logo.png"
       className="w-48 h-auto"
       style={{ filter: "drop-shadow(0 0 8px #0008)" }}
       draggable={false}
@@ -35,7 +35,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("./data/images.json")
+    fetch("./images.json")
       .then((res) => res.json())
       .then((imagesData: ImageMetadata[]) => {
         const initializedImages = imagesData.map((img, index) => ({
@@ -166,12 +166,11 @@ const App: React.FC = () => {
 
           <div className="absolute bottom-4 right-4 z-0 max-w-sm text-right text-xs text-gray-500 pointer-events-none">
             <p>
-              Disclaimer: Reports are for internal development/testing only.
-              Please check whether data is already approved or request Third
-              Party Data to be used for customer/product demonstrations
+              Disclaimer: Images are for viewing purposes only. Do not
+              redistribute, copy, or use without permission.
             </p>
             <p>
-              <b>Falko Schulz, Australia, 2025 SAS Institute Inc.</b>
+              <b>Amiria Schulz, Australia, 2025.</b>
             </p>
           </div>
 

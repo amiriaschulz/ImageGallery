@@ -1,0 +1,35 @@
+[
+  {
+    "id": "img001",
+    "title": "Bird 1",
+    "type": "image",
+    "image_url": "/images/IMG_2461.jpg",
+    "thumbnail": "/images/IMG_2461.jpg",
+    "data": "",
+    "source": "",
+    "description": "Description 1",
+    "tags": ["Geography", "Animals"]
+  },
+  {
+    "id": "img002",
+    "title": "Bird 2",
+    "type": "image",
+    "image_url": "images/IMG_2490.jpg",
+    "thumbnail": "images/IMG_2490.jpg",
+    "data": "",
+    "source": "",
+    "description": "Description 2",
+    "tags": ["Geography", "Animals"]
+  },
+  {
+    "id": "img003",
+    "title": "Wallaby 1",
+    "type": "image",
+    "image_url": "images/IMG_2499.jpg",
+    "thumbnail": "images/IMG_2499.jpg",
+    "data": "",
+    "source": "",
+    "description": "Description 3",
+    "tags": ["Geography", "Animals"]
+  }
+]
