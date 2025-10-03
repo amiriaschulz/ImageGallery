@@ -1,5 +1,5 @@
 // postbuild.js
-// Copies data directory to dist after build
+// Copies data directory to docs after build
 const fs = require("fs");
 const path = require("path");
 
@@ -17,6 +17,6 @@ function copyRecursiveSync(src, dest) {
 }
 
 const srcDir = path.join(__dirname, "data");
-const destDir = path.join(__dirname, "dist", "data");
+const destDir = path.join(__dirname, "docs", "data");
 copyRecursiveSync(srcDir, destDir);
-console.log("Copied data/ to dist/data/");
+console.log("Copied data/ to docs/data/");
