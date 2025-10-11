@@ -31,6 +31,29 @@ const Postcard: React.FC<PostcardProps> = ({
   bringToFront,
   onHover,
 }) => {
+  // Format date from dd-mm-yyyy to '09 Aug 2025' (returns original string on failure)
+  const formatDate = (d?: string) => {
+    if (!d) return null;
+    const parts = d.split('-').map((p) => p.trim());
+    if (parts.length !== 3) return d;
+    const [dd, mm, yyyy] = parts;
+    // Validate numeric parts
+    if (!/^[0-9]{1,2}$/.test(dd) || !/^[0-9]{1,2}$/.test(mm) || !/^[0-9]{4}$/.test(yyyy)) {
+      return d;
+    }
+    const day = Number(dd);
+    const month = Number(mm);
+    const year = Number(yyyy);
+    // Basic range checks
+    if (month < 1 || month > 12 || day < 1 || day > 31) return d;
+    // Construct a Date object using ISO format yyyy-mm-dd
+    const iso = `${year.toString().padStart(4, '0')}-${month
+      .toString()
+      .padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+    const parsed = new Date(iso);
+    if (isNaN(parsed.getTime())) return d;
+    return parsed.toLocaleDateString(undefined, { day: '2-digit', month: 'short', year: 'numeric' });
+  };
   const [transform, setTransform] = useState(image.transform);
   const [isLoaded, setIsLoaded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -211,6 +234,16 @@ const Postcard: React.FC<PostcardProps> = ({
           {isLoaded && image.type === "video" && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-sm">
               <VideoPlayIcon className="w-16 h-16 text-white opacity-80" />
+            </div>
+          )}
+          {/* Date postage stamp - top right, only visible on hover and only if date exists */}
+          {image.date && (
+            <div className="absolute top-2 right-2 pointer-events-none">
+              <div className="opacity-0 transform translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out">
+                <div className="bg-white text-[10px] text-gray-800 font-semibold px-2 py-1 rounded-full shadow-md border border-gray-200">
+                  {formatDate(image.date)}
+                </div>
+              </div>
             </div>
           )}
         </div>

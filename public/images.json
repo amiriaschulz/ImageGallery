@@ -1,14 +1,15 @@
 [
   {
     "id": "img001",
-    "title": "Bird 1",
+    "title": "Ipswich Supercars",
     "type": "image",
-    "image_url": "images/IMG_2461.jpg",
-    "thumbnail": "images/IMG_2461.jpg",
+    "image_url": "images/IMG_9092.jpg",
+    "thumbnail": "images/IMG_9092.jpg",
     "data": "",
     "source": "",
-    "description": "Description 1",
-    "tags": ["Geography", "Animals"]
+    "description": "V8 Supercars at Ipswich Raceway Turn 2",
+    "tags": ["Motorsport", "Cars"],
+    "date": "09-08-2025"
   },
   {
     "id": "img002",
